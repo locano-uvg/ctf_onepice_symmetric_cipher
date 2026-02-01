@@ -92,83 +92,86 @@ LUGARES_ONEPIECE = {
         "Liqueur_Island",
     ],
 }
+def limpiar_nombre_casa(nombre):
+    return nombre.replace(" ", "_")
+
 CASAS_ONEPIECE_CON_NOMBRES = {
-    "Romance_Dawn": ["Casa_de_Makino", "Casa_de_Luffy", "Casa_de_Shanks"],
-    "Shells_Town": ["Casa_de_Rika", "Casa_de_Morgan", "Casa_de_Helmeppo"],
-    "Orange_Town": ["Casa_de_Boodle", "Casa_de_Nami", "Casa_de_Gaimon"],
-    "Syrup_Village": ["Casa_de_Usopp", "Casa_de_Kaya", "Casa_de_Merry"],
-    "Baratie": ["Casa_de_Zeff", "Casa_de_Sanji", "Casa_de_Patty"],
-    "Arlong_Park": ["Casa_de_Arlong", "Casa_de_Nami", "Casa_de_Genzo"],
-    "Loguetown": ["Casa_de_Bell-mère", "Casa_de_Smoker", "Casa_de_Dragon"],
-    "Rainbase": ["Casa_de_Vivi", "Casa_de_Igaram", "Casa_de_Crocodile"],
-    "Yuba": ["Casa_de_Toto", "Casa_de_Kohza", "Casa_de_Pell"],
-    "Nanohana": ["Casa_de_Toto", "Casa_de_Kohza", "Casa_de_Pell"],
-    "Katorea": ["Casa_de_Toto", "Casa_de_Kohza", "Casa_de_Pell"],
-    "Spiders_Cafe": ["Casa_de_Nico Robin", "Casa_de_Miss All Sunday", "Casa_de_Mr. 0"],
-    "Alubarna": ["Casa_de_Vivi", "Casa_de_Igaram", "Casa_de_Crocodile"],
-    "Angel_Beach": ["Casa_de_Conis", "Casa_de_Pagaya", "Casa_de_Gan Fall"],
-    "Upper_Yard": ["Casa_de_Enel", "Casa_de_Nami", "Casa_de_Aisa"],
-    "Shandora": ["Casa_de_Montblanc Norland", "Casa_de_Calgara", "Casa_de_Robin"],
-    "Pumpkin_Cafe": ["Casa_de_Conis", "Casa_de_Pagaya", "Casa_de_Gan Fall"],
-    "Heavens_Gate": ["Casa_de_Enel", "Casa_de_Nami", "Casa_de_Aisa"],
-    "Blue_Station": ["Casa_de_Paulie", "Casa_de_Lucci", "Casa_de_Iceburg"],
-    "Shift_Station": ["Casa_de_Paulie", "Casa_de_Lucci", "Casa_de_Iceburg"],
-    "Carpenters_Cafe": ["Casa_de_Paulie", "Casa_de_Lucci", "Casa_de_Iceburg"],
-    "GalleyLa_Headquarters": ["Casa_de_Paulie", "Casa_de_Lucci", "Casa_de_Iceburg"],
-    "Franky_House": ["Casa_de_Franky", "Casa_de_Iceburg", "Casa_de_Luffy"],
-    "Grove_1": ["Casa_de_Rayleigh", "Casa_de_Shakky", "Casa_de_Keimi"],
-    "Grove_24": ["Casa_de_Rayleigh", "Casa_de_Shakky", "Casa_de_Keimi"],
-    "Grove_41": ["Casa_de_Rayleigh", "Casa_de_Shakky", "Casa_de_Keimi"],
-    "Grove_66": ["Casa_de_Rayleigh", "Casa_de_Shakky", "Casa_de_Keimi"],
-    "Grove_80": ["Casa_de_Rayleigh", "Casa_de_Shakky", "Casa_de_Keimi"],
-    "Grove_109": ["Casa_de_Rayleigh", "Casa_de_Shakky", "Casa_de_Keimi"],
-    "Coral_Hill": ["Casa_de_Otohime", "Casa_de_Shirahoshi", "Casa_de_Neptune"],
-    "Gyoverly_Hills": ["Casa_de_Otohime", "Casa_de_Shirahoshi", "Casa_de_Neptune"],
-    "Mermaid_Cove": ["Casa_de_Otohime", "Casa_de_Shirahoshi", "Casa_de_Neptune"],
-    "Coral_Mansion": ["Casa_de_Otohime", "Casa_de_Shirahoshi", "Casa_de_Neptune"],
-    "Gyoncorde_Plaza": ["Casa_de_Otohime", "Casa_de_Shirahoshi", "Casa_de_Neptune"],
-    "Pirates_Cove": ["Casa_de_GolD_Roger", "Casa_de_Whitebeard", "Casa_de_Shanks"],
-    "Pirates_Tavern": ["Casa_de_GolD_Roger", "Casa_de_Whitebeard", "Casa_de_Shanks"],
-    "Pirates_Hideout": [
+    "Romance_Dawn": [limpiar_nombre_casa(n) for n in ["Casa_de_Makino", "Casa_de_Luffy", "Casa_de_Shanks"]],
+    "Shells_Town": [limpiar_nombre_casa(n) for n in ["Casa_de_Rika", "Casa_de_Morgan", "Casa_de_Helmeppo"]],
+    "Orange_Town": [limpiar_nombre_casa(n) for n in ["Casa_de_Boodle", "Casa_de_Nami", "Casa_de_Gaimon"]],
+    "Syrup_Village": [limpiar_nombre_casa(n) for n in ["Casa_de_Usopp", "Casa_de_Kaya", "Casa_de_Merry"]],
+    "Baratie": [limpiar_nombre_casa(n) for n in ["Casa_de_Zeff", "Casa_de_Sanji", "Casa_de_Patty"]],
+    "Arlong_Park": [limpiar_nombre_casa(n) for n in ["Casa_de_Arlong", "Casa_de_Nami", "Casa_de_Genzo"]],
+    "Loguetown": [limpiar_nombre_casa(n) for n in ["Casa_de_Bell-mère", "Casa_de_Smoker", "Casa_de_Dragon"]],
+    "Rainbase": [limpiar_nombre_casa(n) for n in ["Casa_de_Vivi", "Casa_de_Igaram", "Casa_de_Crocodile"]],
+    "Yuba": [limpiar_nombre_casa(n) for n in ["Casa_de_Toto", "Casa_de_Kohza", "Casa_de_Pell"]],
+    "Nanohana": [limpiar_nombre_casa(n) for n in ["Casa_de_Toto", "Casa_de_Kohza", "Casa_de_Pell"]],
+    "Katorea": [limpiar_nombre_casa(n) for n in ["Casa_de_Toto", "Casa_de_Kohza", "Casa_de_Pell"]],
+    "Spiders_Cafe": [limpiar_nombre_casa(n) for n in ["Casa_de_Nico Robin", "Casa_de_Miss All Sunday", "Casa_de_Mr. 0"]],
+    "Alubarna": [limpiar_nombre_casa(n) for n in ["Casa_de_Vivi", "Casa_de_Igaram", "Casa_de_Crocodile"]],
+    "Angel_Beach": [limpiar_nombre_casa(n) for n in ["Casa_de_Conis", "Casa_de_Pagaya", "Casa_de_Gan_Fall"]],
+    "Upper_Yard": [limpiar_nombre_casa(n) for n in ["Casa_de_Enel", "Casa_de_Nami", "Casa_de_Aisa"]],
+    "Shandora": [limpiar_nombre_casa(n) for n in ["Casa_de_Montblanc Norland", "Casa_de_Calgara", "Casa_de_Robin"]],
+    "Pumpkin_Cafe": [limpiar_nombre_casa(n) for n in ["Casa_de_Conis", "Casa_de_Pagaya", "Casa_de_Gan_Fall"]],
+    "Heavens_Gate": [limpiar_nombre_casa(n) for n in ["Casa_de_Enel", "Casa_de_Nami", "Casa_de_Aisa"]],
+    "Blue_Station": [limpiar_nombre_casa(n) for n in ["Casa_de_Paulie", "Casa_de_Lucci", "Casa_de_Iceburg"]],
+    "Shift_Station": [limpiar_nombre_casa(n) for n in ["Casa_de_Paulie", "Casa_de_Lucci", "Casa_de_Iceburg"]],
+    "Carpenters_Cafe": [limpiar_nombre_casa(n) for n in ["Casa_de_Paulie", "Casa_de_Lucci", "Casa_de_Iceburg"]],
+    "GalleyLa_Headquarters": [limpiar_nombre_casa(n) for n in ["Casa_de_Paulie", "Casa_de_Lucci", "Casa_de_Iceburg"]],
+    "Franky_House": [limpiar_nombre_casa(n) for n in ["Casa_de_Franky", "Casa_de_Iceburg", "Casa_de_Luffy"]],
+    "Grove_1": [limpiar_nombre_casa(n) for n in ["Casa_de_Rayleigh", "Casa_de_Shakky", "Casa_de_Keimi"]],
+    "Grove_24": [limpiar_nombre_casa(n) for n in ["Casa_de_Rayleigh", "Casa_de_Shakky", "Casa_de_Keimi"]],
+    "Grove_41": [limpiar_nombre_casa(n) for n in ["Casa_de_Rayleigh", "Casa_de_Shakky", "Casa_de_Keimi"]],
+    "Grove_66": [limpiar_nombre_casa(n) for n in ["Casa_de_Rayleigh", "Casa_de_Shakky", "Casa_de_Keimi"]],
+    "Grove_80": [limpiar_nombre_casa(n) for n in ["Casa_de_Rayleigh", "Casa_de_Shakky", "Casa_de_Keimi"]],
+    "Grove_109": [limpiar_nombre_casa(n) for n in ["Casa_de_Rayleigh", "Casa_de_Shakky", "Casa_de_Keimi"]],
+    "Coral_Hill": [limpiar_nombre_casa(n) for n in ["Casa_de_Otohime", "Casa_de_Shirahoshi", "Casa_de_Neptune"]],
+    "Gyoverly_Hills": [limpiar_nombre_casa(n) for n in ["Casa_de_Otohime", "Casa_de_Shirahoshi", "Casa_de_Neptune"]],
+    "Mermaid_Cove": [limpiar_nombre_casa(n) for n in ["Casa_de_Otohime", "Casa_de_Shirahoshi", "Casa_de_Neptune"]],
+    "Coral_Mansion": [limpiar_nombre_casa(n) for n in ["Casa_de_Otohime", "Casa_de_Shirahoshi", "Casa_de_Neptune"]],
+    "Gyoncorde_Plaza": [limpiar_nombre_casa(n) for n in ["Casa_de_Otohime", "Casa_de_Shirahoshi", "Casa_de_Neptune"]],
+    "Pirates_Cove": [limpiar_nombre_casa(n) for n in ["Casa_de_GolD_Roger", "Casa_de_Whitebeard", "Casa_de_Shanks"]],
+    "Pirates_Tavern": [limpiar_nombre_casa(n) for n in ["Casa_de_GolD_Roger", "Casa_de_Whitebeard", "Casa_de_Shanks"]],
+    "Pirates_Hideout": [limpiar_nombre_casa(n) for n in [
         "Casa_de_GolD_Roger",
         "Casa_de_Whitebeard",
         "Casa_de_Shanks",
-    ],
-    "Pirates_Den": ["Casa_de_Gol_Roger", "Casa_de_Whitebeard", "Casa_de_Shanks"],
-    "Pirates_Ship": ["Casa_de_GolD_Roger", "Casa_de_Whitebeard", "Casa_de_Shanks"],
-    "Acacia": ["Casa_de_Riku_Dold_III", "Casa_de_Viola", "Casa_de_Rebecca"],
-    "Corrida_Colosseum": ["Casa_de_Riku_Dold_III", "Casa_de_Viola", "Casa_de_Rebecca"],
-    "Flower_Hill": ["Casa_de_Riku_Dold_III", "Casa_de_Viola", "Casa_de_Rebecca"],
-    "Royal_Palace": ["Casa_de_Riku_Dold_III", "Casa_de_Viola", "Casa_de_Rebecca"],
-    "Toy_House": ["Casa_de_Sugar", "Casa_de_Trebol", "Casa_de_Doflamingo"],
-    "Right_Belly_Fortress": [
+    ]],
+    "Pirates_Den": [limpiar_nombre_casa(n) for n in ["Casa_de_Gol_Roger", "Casa_de_Whitebeard", "Casa_de_Shanks"]],
+    "Pirates_Ship": [limpiar_nombre_casa(n) for n in ["Casa_de_GolD_Roger", "Casa_de_Whitebeard", "Casa_de_Shanks"]],
+    "Acacia": [limpiar_nombre_casa(n) for n in ["Casa_de_Riku_Dold_III", "Casa_de_Viola", "Casa_de_Rebecca"]],
+    "Corrida_Colosseum": [limpiar_nombre_casa(n) for n in ["Casa_de_Riku_Dold_III", "Casa_de_Viola", "Casa_de_Rebecca"]],
+    "Flower_Hill": [limpiar_nombre_casa(n) for n in ["Casa_de_Riku_Dold_III", "Casa_de_Viola", "Casa_de_Rebecca"]],
+    "Royal_Palace": [limpiar_nombre_casa(n) for n in ["Casa_de_Riku_Dold_III", "Casa_de_Viola", "Casa_de_Rebecca"]],
+    "Toy_House": [limpiar_nombre_casa(n) for n in ["Casa_de_Sugar", "Casa_de_Trebol", "Casa_de_Doflamingo"]],
+    "Right_Belly_Fortress": [limpiar_nombre_casa(n) for n in [
         "Casa_de_Nekomamushi",
         "Casa_de_Inuarashi",
         "Casa_de_Kawamatsu",
-    ],
-    "Left_Belly_Fortress": [
+    ]],
+    "Left_Belly_Fortress": [limpiar_nombre_casa(n) for n in [
         "Casa_de_Nekomamushi",
         "Casa_de_Inuarashi",
         "Casa_de_Kawamatsu",
-    ],
-    "Right_Hind_Leg": ["Casa_de_Nekomamushi", "Casa_de_Inuarashi", "Casa_de_Kawamatsu"],
-    "Left_Hind_Leg": ["Casa_de_Nekomamushi", "Casa_de_Inuarashi", "Casa_de_Kawamatsu"],
-    "Right_Fore_Leg": ["Casa_de_Nekomamushi", "Casa_de_Inuarashi", "Casa_de_Kawamatsu"],
-    "Left_Fore_Leg": ["Casa_de_Nekomamushi", "Casa_de_Inuarashi", "Casa_de_Kawamatsu"],
-    "Kuri": ["Casa_de_Oden", "Casa_de_Kozuki_Hiyori", "Casa_de_Kozuki_Momonosuke"],
-    "Udon": ["Casa_de_Oden", "Casa_de_Kozuki_Hiyori", "Casa_de_Kozuki_Momonosuke"],
-    "Flower_Capital": [
+    ]],
+    "Right_Hind_Leg": [limpiar_nombre_casa(n) for n in ["Casa_de_Nekomamushi", "Casa_de_Inuarashi", "Casa_de_Kawamatsu"]],
+    "Left_Hind_Leg": [limpiar_nombre_casa(n) for n in ["Casa_de_Nekomamushi", "Casa_de_Inuarashi", "Casa_de_Kawamatsu"]],
+    "Right_Fore_Leg": [limpiar_nombre_casa(n) for n in ["Casa_de_Nekomamushi", "Casa_de_Inuarashi", "Casa_de_Kawamatsu"]],
+    "Left_Fore_Leg": [limpiar_nombre_casa(n) for n in ["Casa_de_Nekomamushi", "Casa_de_Inuarashi", "Casa_de_Kawamatsu"]],
+    "Kuri": [limpiar_nombre_casa(n) for n in ["Casa_de_Oden", "Casa_de_Kozuki_Hiyori", "Casa_de_Kozuki_Momonosuke"]],
+    "Udon": [limpiar_nombre_casa(n) for n in ["Casa_de_Oden", "Casa_de_Kozuki_Hiyori", "Casa_de_Kozuki_Momonosuke"]],
+    "Flower_Capital": [limpiar_nombre_casa(n) for n in [
         "Casa_de_Oden",
         "Casa_de_Kozuki_Hiyori",
         "Casa_de_Kozuki_Momonosuke",
-    ],
-    "Ringo": ["Casa_de_Oden", "Casa_de_Kozuki_Hiyori", "Casa_de_Kozuki_Momonosuke"],
-    "Onigashima": ["Casa_de_Kaido", "Casa_de_Orochi", "Casa_de_Yamato"],
-    "Sweet_City": ["Casa_de_Big_Mom", "Casa_de_Pudding", "Casa_de_Katakuri"],
-    "Cacao_Island": ["Casa_de_Big_Mom", "Casa_de_Pudding", "Casa_de_Katakuri"],
-    "Caramel_Mountain": ["Casa_de_Big_Mom", "Casa_de_Pudding", "Casa_de_Katakuri"],
-    "Whole_Cake_Chateau": ["Casa_de_Big_Mom", "Casa_de_Pudding", "Casa_de_Katakuri"],
-    "Liqueur_Island": ["Casa_de_Big_Mom", "Casa_de_Pudding", "Casa_de_Katakuri"],
+    ]],
+    "Ringo": [limpiar_nombre_casa(n) for n in ["Casa_de_Oden", "Casa_de_Kozuki_Hiyori", "Casa_de_Kozuki_Momonosuke"]],
+    "Onigashima": [limpiar_nombre_casa(n) for n in ["Casa_de_Kaido", "Casa_de_Orochi", "Casa_de_Yamato"]],
+    "Sweet_City": [limpiar_nombre_casa(n) for n in ["Casa_de_Big_Mom", "Casa_de_Pudding", "Casa_de_Katakuri"]],
+    "Cacao_Island": [limpiar_nombre_casa(n) for n in ["Casa_de_Big_Mom", "Casa_de_Pudding", "Casa_de_Katakuri"]],
+    "Caramel_Mountain": [limpiar_nombre_casa(n) for n in ["Casa_de_Big_Mom", "Casa_de_Pudding", "Casa_de_Katakuri"]],
+    "Whole_Cake_Chateau": [limpiar_nombre_casa(n) for n in ["Casa_de_Big_Mom", "Casa_de_Pudding", "Casa_de_Katakuri"]],
+    "Liqueur_Island": [limpiar_nombre_casa(n) for n in ["Casa_de_Big_Mom", "Casa_de_Pudding", "Casa_de_Katakuri"]],
 }
 
 ACTIVIDADES_RANDOM = [
@@ -242,8 +245,8 @@ def crear_archivos_con_ruta(carpetas, challenge):
 # Directorio base del laberinto
 def main(challenge):
     # Eliminar el laberinto si ya existe
-    if os.path.exists(f"challenge/{challenge}/ONEPIECE"):
-        os.system("rm -r " + f"challenge/{challenge}/ONEPIECE")
+    if os.path.exists(f"challenges/{challenge}/ONEPIECE"):
+        os.system("rm -r " + f"challenges/{challenge}/ONEPIECE")
 
     # Directorio para el reto
     challenge_dir = f"challenges/{challenge}/ONEPIECE"
@@ -253,7 +256,7 @@ def main(challenge):
     carpetas = generar_laberinto(challenge_dir)
     ruta1, ruta2 = crear_archivos_con_ruta(carpetas, challenge)
     print("Laberinto generado con éxito.")
-    return ruta1, ruta2
+    return ruta1, ruta2, carpetas
 
 
 if __name__ == "__main__":
